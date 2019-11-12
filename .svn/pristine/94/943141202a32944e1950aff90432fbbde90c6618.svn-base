@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="../css/details.css">
+<body>
+    <div class="head">
+        <div class="head-main">
+            <div class="head-main-left">
+                <div class="head-main-left1">
+                    <a href="">收藏波奇商城</a>
+                </div>
+                <div class="head-main-left2">
+                    <span>江苏</span>
+                    <div class=" city_select">
+                        <dl>
+                            <dt>华东地区：</dt>
+                            <dd>
+                                <a href="javascript;">上海</a>
+                                <a href="javascript;">江苏</a>
+                                <a href="javascript;">浙江</a>
+                                <a href="javascript;">安徽</a>
+                                <a href="javascript;">山东</a>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>华北东北：</dt>
+                            <dd>
+                                <a href="javascript;">北京</a>
+                                <a href="javascript;">天津</a>
+                                <a href="javascript;">河北</a>
+                                <a href="javascript;">山西</a>
+                                <a href="javascript;">内蒙古</a>
+                                <a href="javascript;">辽宁</a>
+                                <a href="javascript;">吉林</a>
+                                <a href="javascript;">黑龙江</a>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>华南西南：</dt>
+                            <dd>
+                                <a href="javascript;">广东</a>
+                                <a href="javascript;">广西</a>
+                                <a href="javascript;">海南</a>
+                                <a href="javascript;">福建</a>
+                                <a href="javascript;">四川</a>
+                                <a href="javascript;">重庆</a>
+                                <a href="javascript;">贵州</a>
+                                <a href="javascript;">云南</a>
+                                <a href="javascript;">西藏</a>
+                            </dd>
+                        </dl>
+                        <dl class="last">
+                            <dt>华中西北：</dt>
+                            <dd class="nobor">
+                                <a href="javascript;">湖北</a>
+                                <a href="javascript;">湖南</a>
+                                <a href="javascript;">河南</a>
+                                <a href="javascript;">江西</a>
+                                <a href="javascript;">陕西</a>
+                                <a href="javascript;">甘肃</a>
+                                <a href="javascript;">青海</a>
+                                <a href="javascript;">宁夏</a>
+                                <a href="javascript;">新疆</a>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+            <ul class="head-main-right">
+                <li><a href="login.html" target="_blank">登录</a></li>
+                <li><a href="register.html" target="_blank">注册</a></li>
+                <li  class="ph">
+                    <a href="">手机版</a>
+                    <div class="tel">
+                        <img src="http://b.boqiicdn.com/v2/images/tel.jpg" alt="">
+                    </div>
+                </li>
+                <li class="ph1">
+                    <a href="">关注波奇</a>
+                    <div class="gh">
+                        <div>
+                        <img src="http://b.boqiicdn.com/v2/images/wx.gif" alt="">
+                        <p>微信</p>
+                        </div>
+                        <div>
+                        <img src="http://b.boqiicdn.com/v2/images/wb.gif" alt="">
+                        <p>微博</p>
+                        </div>
+                    </div>
+                
+                </li>
+                <li class="sh">
+                    <a href="">
+                       <img src="http://b.boqiicdn.com/v2/images/r_icon.png" alt=""> 波奇首页</a>
+                    <div class="ph2">
+                        <a href="">波奇服务</a>
+                        <a href="">波奇论坛</a>
+                        <a href="">宠物百科</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="head-img">
+        <img src="http://img.boqiicdn.com/Data/Shop/0/0/0/shopimgFile1571223917.jpg" alt="">
+    </div>
+    <div class="top">
+        <div class="top-auto">
+            <div class="logo left">
+                <img src="http://b.boqiicdn.com/v2/images/shopnewlogo.png" alt="">
+            </div>
+            <div class="top-search left">
+                <div class="top-search-t">
+                    <input type="text" class="txt" value="维生素B">
+                    <input type="button" class="btn" value="搜索">
+                </div>
+                <div class="top-search-f">
+                    <p>热门搜索：
+                        <a href="">进口狗粮</a>
+                        <a href="">进口猫粮</a>
+                        <a href="">猫厕所</a>
+                        <a href="">猫笼</a>
+                        <a href="">口腔护理</a>
+                        <a href="">美毛护肤</a>
+                    </p>
+                </div>
+            </div>
+            <div class="top-ad">
+                <img src="http://b.boqiicdn.com/v2/images/ad2.gif" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="nav">
+        <div class="nav-auto">
+            <div class="nav-left left">
+                <a href="" class="fen">
+                    <span>全部商品分类</span>
+                </a>
+            </div>
+                    <div class="menu left">
+                        <div class="menu-list">
+                            <div class="menu-list-l" style="height:93px">
+                                <div class="menu_tit"><em></em><a href="javascript:;" target="_blank">狗狗商品</a><span></span>
+                                    <div class="menu_body">
+                                        <span><a href="" target="_blank"></a>主粮</a></span>
+                                        <span><a href="" target="_blank">零食</a></span>
+                                        <span><a href="" target="_blank">医疗</a></span>
+                                        <span><a href="" target="_blank">保健</a></span>
+                                        <span><a href="" target="_blank">出行</a></span>
+                                        <span><a href="" target="_blank">日用</a></span>
+                                        <span><a href="" target="_blank">玩具</a></span>
+                                        <span><a href="" target="_blank">美容</a></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu_right">
+                                <div>
+                                    <a href="" class="a1">狗狗主粮</a>
+                                    <a href="">进口粮</a>
+                                    <a href="">国产粮</a>
+                                    <a href="">处方粮</a>
+                                    <a href="">冻干粮</a>
+                                </div>
+                                <div>
+                                    <a href="" class="a1">狗狗零食</a>
+                                    <a href="">罐头湿粮</a>
+                                    <a href="">肉类零食</a>
+                                    <a href="">磨牙洁齿</a>
+                                    <a href="">奶酪饼干</a>
+                                </div>
+                                <div>
+                                    <a href="" class="a1">医疗护理</a>
+                                    <a href="">皮肤治疗</a>
+                                    <a href="">综合护理</a>
+                                    <a href="">内外驱虫</a>
+                                    <a href="">常备药品</a>
+                    
+                                </div>
+                                <div>
+                                    <a href="" class="a1">营养保健</a>
+                                    <a href="">美肤护肤</a>
+                                    <a href="">补钙健骨</a>
+                                    <a href="">肠胃调理</a>
+                                    <a href="">综合营养</a>
+                                </div>
+                                <div>
+                                    <a href="" class="a1">生活用品</a>
+                                    <a href="">狗狗餐具</a>
+                                    <a href="">狗狗住所</a>
+                                    <a href="">排便清洁</a>
+                                    <a href="">服装饰品</a>
+                                    <a href="">训练用品</a>
+                                </div>
+                                <div>
+                                    <a href="" class="a1">出行装备</a>
+                                    <a href="">航空背包</a>
+                                    <a href="">牵引系列</a>
+                                    <a href="">胸背带</a>
+                                    <a href="">项圈狗牌</a>
+                                    <a href="">外出辅助</a>
+                                </div>
+                                <div>
+                                    <a href="" class="a1">狗狗美容</a>
+                                    <a href="">洗护香波</a>
+                                    <a href="">梳剪工具</a>
+                                    <a href="">洗澡用品</a>
+                    
+                                </div>
+                                <div>
+                                    <a href="" class="a1">狗狗玩具</a>
+                                    <a href="">益智玩具</a>
+                                    <a href="">磨牙工具</a>
+                                    <a href="">训练玩具</a>
+                                    <a href="">漏食玩具</a>
+                                </div>
+                    
+                            </div>
+                        </div>
+                        <div class="menu-list">
+                            <div class="menu-list-l" style="height:92px">
+                    
+                                <div class="menu_tit"><em></em><a href="javascript:;" target="_blank">猫猫商品</a><span></span>
+                                    <div class="menu_body">
+                                        <span><a href="" target="_blank"></a>主粮</a></span>
+                                        <span><a href="" target="_blank">零食</a></span>
+                                        <span><a href="" target="_blank">医疗</a></span>
+                                        <span><a href="" target="_blank">保健</a></span>
+                                        <span><a href="" target="_blank">出行</a></span>
+                                        <span><a href="" target="_blank">日用</a></span>
+                                        <span><a href="" target="_blank">玩具</a></span>
+                                        <span><a href="" target="_blank">美容</a></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu_right">
+                                <div>
+                                    <a href="" class="a1">猫咪主粮</a>
+                                    <a href="">进口粮</a>
+                                    <a href="">国产粮</a>
+                                    <a href="">处方粮</a>
+                                    <a href="">冻干粮</a>
+                                </div>
+                                <div>
+                                    <a href="" class="a1">猫咪零食</a>
+                                    <a href="">罐头湿粮</a>
+                                    <a href="">肉类零食</a>
+                                    <a href="">猫草薄荷</a>
+                                    <a href="">休闲粮食</a>
+                                </div>
+                                <div>
+                                    <a href="" class="a1">医疗护理</a>
+                                    <a href="">皮肤治疗</a>
+                                    <a href="">综合护理</a>
+                                    <a href="">内外驱虫</a>
+                                    <a href="">常备药品</a>
+                    
+                                </div>
+                                <div>
+                                    <a href="" class="a1">保健营养</a>
+                                    <a href="">美毛化毛</a>
+                                    <a href="">补钙健骨</a>
+                                    <a href="">肠胃调理</a>
+                                    <a href="">综合营养</a>
+                                </div>
+                                <div>
+                                    <a href="" class="a1">猫砂猫厕</a>
+                                    <a href="">膨润土猫砂</a>
+                                    <a href="">水晶猫砂</a>
+                                    <a href="">松木猫砂</a>
+                                    <a href="">纸砂豆腐腐砂</a>
+                                </div>
+                                <div>
+                                    <a href="" class="a1">生活用品</a>
+                                    <a href="">猫咪餐具</a>
+                                    <a href="">服装饰品</a>
+                                    <a href="">猫咪住所</a>
+                                    <a href="">出行用品</a>
+                                </div>
+                                <div>
+                                    <a href="" class="a1">猫咪玩具</a>
+                                    <a href="">猫爬架</a>
+                                    <a href="">猫抓板</a>
+                                    <a href="">逗猫玩具</a>
+                                </div>
+                                <div>
+                                    <a href="" class="a1">猫咪美容</a>
+                                    <a href="">洗护香波</a>
+                                    <a href="">梳剪工具</a>
+                                    <a href="">洗澡用品</a>
+                                </div>
+                    
+                            </div>
+                        </div>
+                        <div class="menu-list">
+                            <div class="menu-list-l" style="height:48px">
+                                <div class="menu_tit"><em class="small"></em><a href="javascript:;" target="_blank">奇趣小宠</a><span></span>
+                                </div>
+                                <div class="menu_body">
+                                    <span><a href="" target="_blank">兔子</a></span>
+                                    <span><a href="" target="_blank">仓鼠</a></span>
+                                    <span><a href="" target="_blank">龙猫</a></span>
+                                </div>
+                            </div>
+                            <div class="menu_right">
+                                <div>
+                                    <a href="" class="a1">兔子</a>
+                                    <a href="">兔粮</a>
+                                    <a href="">用品</a>
+                                    <a href="">窝笼</a>
+                                </div>
+                                <div>
+                                    <a href="" class="a1">仓鼠</a>
+                                    <a href="">仓鼠窝</a>
+                                    <a href="">笼窝</a>
+                                    <a href="">器具</a>
+                                    <a href="">玩具</a>
+                                    <a href="">磨牙</a>
+                                    <a href="">用具</a>
+                                </div>
+                                <div>
+                                    <a href="" class="a1">龙猫</a>
+                                    <a href="">龙猫粮</a>
+                                    <a href="">龙猫用品</a>
+                                    <a href="">龙猫</a>
+                                    <a href="">窝笼</a>
+                                    <a href="">用具</a>
+                    
+                                </div>
+                                <div>
+                                    <a href="" class="a1">天竺鼠</a>
+                                    <a href="">天竺鼠粮</a>
+                                </div>
+                                <div>
+                                    <a href="" class="a1">乌龟</a>
+                                    <a href="">龟粮</a>
+                                    <a href="">龟箱</a>
+                                    <a href="">医疗</a>
+                                    <a href="">器具</a>
+                                </div>
+                                <div>
+                                    <a href="" class="a1">蜥蜴</a>
+                                    <a href="">器材</a>
+                                </div>
+                                <div>
+                                    <a href="" class="a1">鸟类</a>
+                                    <a href="">饲料</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-list">
+                            <div class="menu-list-l" style="height:70px">
+                                <div class="menu_tit"><em class="water"></em><a href="javascript:;" target="_blank">水族市场</a><span></span>
+                                </div>
+                                <div class="menu_body">
+                                    <span><a href="" target="_blank">鱼食</a></span>
+                                    <span><a href="" target="_blank">鱼缸</a></span>
+                                    <span><a href="" target="_blank">器材</a></span>
+                                    <span><a href="" target="_blank">造景</a></span>
+                                </div>
+                            </div>
+                            <div class="menu_right">
+                                <div>
+                                    <a href="" class="a1">鱼粮</a>
+                                    <a href="">鱼粮</a>
+                                    <a href="">喂食器</a>
+                                    <a href="">餐具</a>
+                                </div>
+                                <div>
+                                    <a href="" class="a1">布艺生活</a>
+                                    <a href="">硝化细菌</a>
+                                    <a href="">水质调理</a>
+                                    <a href="">预防疾病</a>
+                                    <a href="">抑菌杀菌</a>
+                                    <a href="">水草肥料</a>
+                                </div>
+                                <div>
+                                    <a href="" class="a1">鱼缸</a>
+                                    <a href="">小型鱼缸</a>
+                                    <a href="">中型鱼缸</a>
+                                    <a href="">大型鱼缸</a>
+                                </div>
+                                <div>
+                                    <a href="" class="a1">器材</a>
+                                    <a href="">过滤器</a>
+                                    <a href="">滤材</a>
+                                    <a href="">增氧泵</a>
+                                    <a href="">温控设备</a>
+                                    <a href="">照明设备</a>
+                                    <a href="">清洁用具</a>
+                                </div>
+                                <div>
+                                    <a href="" class="a1">造景</a>
+                                    <a href="">造景/装饰</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-list">
+                            <div class="menu-list-l a" style="height:52px;">
+                                <div class="menu_tit"><em class="reptile"></em><a href="" target="_blank">萌宠周边</a><span></span>
+                                </div>
+                                <div class="menu_body">
+                                    <span><a href="" target="_blank">布艺</a></span>
+                                    <span><a href="" target="_blank">装饰</a></span>
+                                    <span><a href="" target="_blank">家居</a></span>
+                                </div>
+                            </div>
+                            <div class="menu_right">
+                                <div>
+                                    <a href="" class="a1">餐饮用品</a>
+                                    <a href="">杯子</a>
+                                    <a href="">碗具</a>
+                                    <a href="">餐具</a>
+                                </div>
+                                <div>
+                                    <a href="" class="a1">布艺生活</a>
+                                    <a href="">地垫地毯</a>
+                                    <a href="">公仔玩偶</a>
+                                    <a href="">门帘布罩</a>
+                                    <a href="">口罩眼罩</a>
+                                    <a href="">居家服饰</a>
+                                </div>
+                                <div>
+                                    <a href="" class="a1">生活家居</a>
+                                    <a href="">电子周边</a>
+                                    <a href="">居家用品</a>
+                    
+                                </div>
+                                <div>
+                                    <a href="" class="a1">出行箱包</a>
+                                    <a href="">宠物背包</a>
+                                    <a href="">挎包零钱包</a>
+                                    <a href="">车载用品</a>
+                                    <a href="">其他用品</a>
+                                </div>
+                                <div>
+                                    <a href="" class="a1">装饰工艺</a>
+                                    <a href="">工艺礼品</a>
+                                    <a href="">墙壁壁画</a>
+                                    <a href="">珠宝饰品</a>
+                                    <a href="">装饰摆件</a>
+                                </div>
+                    
+                            </div>
+                        </div>
+                    </div>
+            <div class="nav-main left">
+                <a href="index.html" style="background: red;">首页</a>
+                <a href="commodity.html">狗狗</a>
+                <a href="commodity.html">猫猫</a>
+                <a href="commodity.html">小宠</a>
+                <a href="commodity.html">水族</a>
+                <a href="">全球购</a>
+                <a href="">创意生活</a>
+                <a href="">品牌馆</a>
+                <a href="">波奇服务</a>
+            </div>
+            <div class="nav-right">
+                <div class="nav-car">
+                    购物车
+                </div>
+                <div class=""></div>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="main-auto">
+            <div class="shop-l">
+                <!-- <div class="shop-l-t">
+                 <div class="shop-img">
+                     <img src="http://img-new.boqiicdn.com/Data/Shop/2/280/28038/shoppicpath11540362569_y.jpg?imageView2/2/w/360/h/360/q/100/interlace/0" alt="">
+                     <span></span>
+                </div>
+                <div class="shop-big">
+                            <img src="http://img-new.boqiicdn.com/Data/Shop/2/280/28038/shoppicpath11540362569_y.jpg?imageView2/2/w/360/h/360/q/100/interlace/0"
+                                alt="">
+                 </div>
+                 <div class="img-small">
+                  <div class="img-s">
+                     <img src="http://img-new.boqiicdn.com/Data/Shop/2/280/28038/shoppicpath11540362569_y.jpg?imageView2/2/w/360/h/360/q/100/interlace/0" alt=""> 
+                     <img src="http://img-new.boqiicdn.com/Data/Shop/2/280/28038/shoppicpath21531811946_y.jpg?imageView2/2/w/360/h/360/q/100/interlace/0" alt="">
+                     <img src="http://img-new.boqiicdn.com/Data/Shop/2/280/28038/shoppicpath31531811946_y.jpg?imageView2/2/w/360/h/360/q/100/interlace/0" alt="">
+                     <img src="http://img-new.boqiicdn.com/Data/Shop/2/280/28038/shoppicpath41531811946_y.jpg?imageView2/2/w/360/h/360/q/100/interlace/0" alt="">
+                     <img src="http://img-new.boqiicdn.com/Data/Shop/2/280/28038/shoppicpath51531811947_y.jpg?imageView2/2/w/360/h/360/q/100/interlace/0" alt="">
+                  </div>
+                 </div>
+                </div> -->
+            </div>
+            <div class="shop-c">
+                <!-- <div class="shop-name">
+                  <div class="shop-name-t">
+                      <h3>APDC 漂漂水全能喷雾 森林香 300ml 猫狗通用</h3>
+                  </div>  
+                  <div class="shop-name-f">
+                      <p>[11.1-11.11]黑卡充1000得1360，充5000得6400！素力高/渴望/纽顿尽享5折！</p>
+                  </div>
+                </div>
+                <div class="shop-center">
+                <p><span>波奇价:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><strong>153</strong><span>&nbsp;&nbsp;&nbsp;&nbsp;波奇豆抵10%</span></p>
+                <p><span>厂商指导价:&nbsp;&nbsp;&nbsp;</span>
+                <span>¥168.30</span></p>
+                <div class="l">促销信息:</div>
+                <div class="r">
+                换购全场满￥1.00元另加￥5.00元，全场满￥100.00元另加￥10.00元，全场满￥199.00元另加￥29.00元，即可换购热销商品</div>
+                </div> 
+                <div class="shop-footer">
+                    <div class="home">
+                    <div>配 送 至：</div>
+                    <div class="dz">江苏</div>
+                    <div class="dz1">
+                        <a href="">湖北</a>
+                        <a href="">湖南</a>
+                        <a href="">河南</a>
+                        <a href="">江西</a>
+                        <a href="">陕西</a>
+                        <a href="">甘肃</a>
+                        <a href="">青海</a>
+                        <a href="">宁夏</a>
+                        <a href="">新疆</a>
+                    </div>
+                    <div>有货；支持使用优惠券</div>
+                    </div>
+                    <div class="number">
+                    <div>购买数量</div>
+                    <div class="num-b">
+                        <input type="button" id="btn1" value="-">
+                        <input type="type" class="bth2"  size="2" value="1" disabled>
+                        <input type="button" id="bth3" value="+">
+                    </div>
+                </div>
+                        <div class="buy">
+                          <input type="button" value="立即购买">
+                         <input type="button" value="加入购物车">  
+                        </div>
+                </div>   -->
+            </div>
+            <div class="shop-r">
+                <div class="shop-r-1">
+                    <div><img src="http://b.boqiicdn.com/v2/images/btn_z.jpg" alt=""><p>100%<br>
+                    正品保障</p></div>
+                    <div><img src="http://b.boqiicdn.com/v2/images/btn_c.jpg" alt=""><p>7省<br>
+                    满59免运费</p></div>
+                    <div><img src="http://b.boqiicdn.com/v2/images/btn_q.jpg" alt=""><p>7天
+                    <br>无忧退换</p></div>
+                </div>
+                <div class="shop-r-2">
+                <p>所属品牌：<span>APDC</span></p>
+                <p>商品编号：<span>2184101</span></p>
+                <p>已售：84</p>
+                <p>满意指数：※※※※※</p>
+                </div>
+                <div class="shop-r-3">
+                    <p>授权认证： 授权文件</p>
+                    <p>对商品有疑问？</p>
+                </div>
+                <div class="shop-r-4">
+                    <div><img src="http://b.boqiicdn.com/v2/images/app_small.jpg" alt=""></div>
+                    <div class="shop-r-4-r">
+                        <p>波奇客户端</p>
+                        <p>注册立享270元，首单再送330元</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="foot-service">
+        <div class="foot_s_body">
+            <dl class="left">
+                <dt class="foot_s_1"><img src="../imgs/1.PNG" alt=""></dt>
+                <dd class="name">正品保障</dd>
+                <dd>全场正品&#12288;假一罚十</dd>
+            </dl>
+            <dl class="left">
+                <dt class="foot_s_2"><img src="../imgs/2.PNG" alt=""></dt>
+                <dd class="name">闪电发货</dd>
+                <dd>7省满59免运费</dd>
+            </dl>
+            <dl class="left">
+                <dt class="foot_s_3"><img src="../imgs/3.PNG" alt=""></dt>
+                <dd class="name">无忧退换</dd>
+                <dd>七天退换&#12288;购买无忧</dd>
+            </dl>
+            <dl class="left">
+                <dt class="foot_s_4"><img src="../imgs/4.PNG" alt=""></dt>
+                <dd class="name">优质服务</dd>
+                <dd>品类丰富&#12288;多快好省</dd>
+            </dl>
+            <dl class="left last">
+                <dt class="foot_s_5"><img src="../imgs/5.PNG" alt=""></dt>
+                <dd class="name">诚信电商</dd>
+                <dd>宠友放心&#12288;值得信赖</dd>
+            </dl>
+        </div>
+    </div>
+    <div id="link">
+        <div class="link_auto">
+            <dl>
+                <dt>新手上路</dt>
+                <dd><a>购物流程</a></dd>
+                <dd><a>现金账户</a></dd>
+                <dd><a>优惠券</a></dd>
+                <dd><a>订单查询</a></dd>
+                <dd><a>服务协议</a></dd>
+            </dl>
+            <dl>
+                <dt>购买方式</dt>
+                <dd><a>余额支付</a></dd>
+                <dd><a>网上支付</a></dd>
+                <dd><a>银行汇款</a></dd>
+                <dd><a>货到付款</a></dd>
+            </dl>
+            <dl>
+                <dt>配送方式</dt>
+                <dd><a>配送方式</a></dd>
+                <dd><a>收费标准</a></dd>
+                <dd><a>配送时间</a></dd>
+            </dl>
+            <dl>
+                <dt>售后服务</dt>
+                <dd><a>如何退换货</a></dd>
+                <dd><a>如何退款</a></dd>
+                <dd><a>退换货流程 </a></dd>
+                <dd><a>客服电话</a></dd>
+            </dl>
+            <dl>
+                <dt>常见问题</dt>
+                <dd><a>注册登录</a></dd>
+                <dd><a>波奇豆</a></dd>
+                <dd><a>热点问题</a></dd>
+            </dl>
+        </div>
+    </div>
+    <div id="footer">
+        <div class="footer_auto">
+            <div class="footer_bot">
+                <p class="link">
+                    <a>关于波奇</a><span>|</span>
+                    <a>友情链接</a><span>|</span>
+                    <a>诚聘英才</a><span>|</span>
+                    <a>联系我们</a><span>|</span>
+                    <a>网站地图</a><span>|</span>
+                    <a>意见反馈</a><span>|</span>
+                    <a>帮助中心</a><span>|</span>客服热线：400-820-6098
+                </p>
+                <p>
+                    <a target="_blank" href="javascript;"><img
+                            src="http://b.boqiicdn.com/v2/images/icons/beian.png" alt=""> 沪公网安备 31011502004955号</a>
+                    <span>|</span>
+                    <a target="_blank" href="javascript:;">沪ICP备13034501号-2</a> <span>|</span>
+                    &nbsp;增值电信业务经营许可证：
+                    <a target="_blank" href="javascript:;">沪B2-20140120</a>
+                </p>
+                <p class="copy">
+                    Copyright &copy; 2007-2019 Boqii.com All Rights Reserved 光橙（上海）信息科技有限公司 版权所有
+    
+                </p>
+                <p>
+                    <a rel="nofollow" target="_blank" href="javascript:;"><img width="100" height="35"
+                            src="http://b.boqiicdn.com/v2/images/foot_gs.png"></a>
+                    <a rel="nofollow" target="_blank" href="javascript:;"><img width="100" height="35"
+                            src="http://b.boqiicdn.com/v2/images/foot_cx.png"></a>
+                    <a rel="nofollow" target="_blank" href="javascript:;"><img width="100" height="35"
+                            src="http://b.boqiicdn.com/v2/images/foot_kx.png"></a>
+                    <a rel="nofollow" target="_blank" href="javascript:;"><img width="100" height="35"
+                            src="http://b.boqiicdn.com/v2/images/foot_zx.png"></a>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../libs/jquery.js"></script>
+<script src="../libs/cookie.js"></script>
+<script src="../libs/ajax.js"></script>
+<script src="../js/details.js"></script>
+<script>
+</script>
+</html>
