@@ -36,7 +36,7 @@
     display: inline;
     float: right;
 }
-.header-right li{
+/* .header-right li{
     float: left;
     height: 16px;
     padding: 0 13px;
@@ -45,6 +45,74 @@
     position: relative;
     z-index: 10;
     font: 14px/14px "Microsoft YaHei";
+} */
+ .head-main-right {
+        width: 500px;
+        float: right;
+        height: 36px;
+        line-height: 36px;
+        text-align: right;
+        margin-left: 20px;
+    }
+    .head-main-right li{
+    float: left;
+    border-right: 1px solid #ccc;
+    padding: 0 10px;
+    line-height: 16px;
+    margin: 10px 0;
+    padding-left:10px;
+    }
+    .head-main-right .ph {
+        position: relative;
+    }
+    .head-main-right .ph1 {
+        position: relative;
+    }
+    .head-main-right .sh {
+        position: relative;
+    }
+    .head-main-right .tel{
+    position: absolute;
+    right: -1px;
+    top: 36px;
+    width: 100px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background: #fff;
+     display: none;
+     }
+    .head-main-right .gh{
+    position: absolute;
+    right: -40px;
+    top: 36px;
+    width: 201px;
+    border: 1px solid #ccc;
+    background: #fff;
+    overflow: hidden;
+     display: none;
+}
+.head-main-right .gh div{
+    float: left;
+    margin-left:10px;
+}
+   
+.head-main-right .ph2{ position: absolute;
+    right: -1px;
+    top: 36px;
+    width: 100px;
+    border: 1px solid #ccc;
+     background: #fff;
+     display: none;
+     z-index: 2;
+
+}
+     .head-main-right .ph2 a{
+     display: block;
+    border-bottom: 1px dotted #ccc;
+    padding: 0 8px;
+    line-height: 28px;
+    overflow: hidden;
+    text-align: center;
 }
 .login-contant{
     width: 1519px;
@@ -81,6 +149,9 @@ height: 88px;
     color: #333;
     font-family: "SimSun";
 }
+.has-num a{
+    color:blue;
+}
 .login-body{
     width: 992px;
     height: 583px;
@@ -97,17 +168,26 @@ height: 88px;
 }
 .lb-l-p{
     width: 693px;
-    height: 38px;
+    height: 50px;
     font-size:20px;
+}
+.lb-l-p h2{
+ display:block;
+ width:180px;
+ height: 50px;
+ border-bottom:2px solid #f65;
+}
+.lb-l-p img{
+    padding-top:5px;
 }
 .lb-input{
     width: 690px;
     height: 500px;
-    padding-top: 100px;
+    padding-top: 80px;
 }
 .lb-input input{
-    width: 200px;
-    height: 30px;
+    width: 250px;
+    height: 40px;
     margin-top:30px;
 }
 .btn{

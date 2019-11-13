@@ -347,28 +347,34 @@
     cursor:pointer;
 }
   .cont {
-        width: 1000px;
+        width: 1200px;
         margin: 0 auto;
         margin-top:56px;
-        height: 1000px;
+        height: 1100px;
     }
 
     .box {
         width: 250px;
         float: left;
-        border: 1px solid #ccc;
-        text-align: center;
+        border: 2px solid #ccc;
+        /* text-align: center; */
         box-sizing: border-box;
+        margin: 10px 10px 0 0 ;
+    }
+    .box:hover{
+        border-color: red;
     }
 
     .box img {
         width: 70%;
+        padding-left:40px;
     }
 
     .box p {
         margin: 6px 0;
         height: 20px;
         overflow: hidden;
+        font-size: 14px;
     }
 
     .box span {
@@ -376,11 +382,22 @@
         margin: 0 auto;
         color:red;
         overflow: hidden;
+        font-size: 14px;
     }
 
-    .box button {
+    .btn,.btn1 {
         display: block;
-        margin: 6px auto;
+        margin: 6px 10px;
+        width: 100px;
+        height: 30px;
+        border:none;
+        float:left;
+    }
+    .btn:hover{
+        background:  #e53;
+    }
+    .btn1:hover{
+        background:  #e53;
     }
     .foot-service {
         width: 1519px;

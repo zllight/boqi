@@ -72,6 +72,8 @@ class shop {
                   <span>[11.1-11.11]黑卡充1000得1360</span>
                   <p>已售309661    已有779人评价</p>
                 <input type="button" class="btn" value="加入购物车">
+                 <input type="button" class="btn1" value="收藏">
+                
             </div> `
         }
         this.cont.innerHTML = str;

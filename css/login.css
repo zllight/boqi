@@ -12,6 +12,9 @@
 .login-top img{
     float:left;
 }
+html,body{
+background: #f3f3f3;
+}
 .login-top{
 position: relative;
 width: 990px;
@@ -33,7 +36,7 @@ margin: 0 auto;
     width: 990px;
     height: 440px;
     margin: 0 auto;
-    background: #f3f3f3;
+    background: white;
 }
 .lb-l{
     width: 480px;
@@ -42,21 +45,58 @@ margin: 0 auto;
     float: left;
 }
 .lb-r{
-    width: 300px;
-    height: 400px;
-    float: right;
-    padding-top: 40px;
+    width: 400px;
+    height: 200px;
+    float: left;
+    padding: 100px 0 0 80px;
 }
 .lb-r input{
-    width: 200px;
-    height: 40px;
-    margin-top: 40px;
+    width: 400px;
+    height: 50px;
+    /* margin-top: 40px; */
+    border: 1px solid #ccc;
+}
+.lb-r-top{
+    width: 400px;
+    height: 50px;
+    border: 1px solid #ccc;;
+}
+.lb-r-top div{
+    float:left;
+    width: 199px;
+    height: 100%;
+    line-height: 50px;
+    text-align: center;
+    font-size: 16px;
+    color:#000000;
+}
+.lb-r-footer{
+    width:400px;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.btn{
+    background: #f65 ;
+    border:1px solid #f65;
+    margin-top: 20px;
+    color:white;
+    font-size: 16px;
+}
+#r1{width: 15px;height: 15px;}
+.lb-r-1{
+    border-right: 1px solid #ccc;
+    border-bottom: 2px solid #f65;
+}
+.lb-r-2{
+    border-bottom: 2px solid #ccc;
 }
 .lb-r p {
     display: block;
     width: 100px;
     height: 20px;
-    margin: 10px 0 0 140px;
+    margin: 0 0 0 140px;
 }
  #footer
     {

@@ -1,4 +1,21 @@
-
+$(".ph").mouseenter(function () {
+    $(".tel").css({ "display": "block" })
+})
+$(".ph").mouseleave(function () {
+    $(".tel").css({ "display": "none" })
+})
+$(".sh").mouseenter(function () {
+    $(".ph2").css({ "display": "block" })
+})
+$(".sh").mouseleave(function () {
+    $(".ph2").css({ "display": "none" })
+})
+$(".ph1").mouseenter(function () {
+    $(".gh").css({ "display": "block" })
+})
+$(".ph1").mouseleave(function () {
+    $(".gh").css({ "display": "none" })
+})
 var oTxt1 = document.getElementById("ph");
 var opas1 = document.getElementById("m1");
 var opas2 = document.getElementById("m2");

@@ -133,7 +133,7 @@ class Car {
                         this.goods[i].num--;
                         $(this).prev().text(this.goods[i].num);
                         $(this).parent().parent().next().next().text(this.goods[i].num * $(this).parent().parent().next().text());
-                        console.log(this.goods[i]);
+                        console.log(this.goods[i].num);
                     }
                 }
             }

@@ -69,7 +69,7 @@
     position: absolute;
     right: -1px;
     top: 36px;
-    width: 100px;
+    width: 120px;
     padding: 10px;
     border: 1px solid #ccc;
     background: #fff;
@@ -214,6 +214,7 @@
     text-align: center;
     color:white;
     cursor: pointer;
+    border-radius: 5px;
 }
 
  #link{
