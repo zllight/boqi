@@ -22,204 +22,181 @@ $(".ph1").mouseenter(function () {
 $(".ph1").mouseleave(function () {
     $(".gh").css({ "display": "none" })
 })
-class car {
+class Car {
     constructor() {
+        this.tbody = document.querySelector("tbody")
         this.url = "http://localhost/boqi/goods/goods.json";
-        this.tbody = document.querySelector("tbody");
-        this.ch = document.getElementById("ch");
-        this.abc = document.getElementById("abc");
-        this.efg = document.getElementById("efg");
-        this.h4 = document.querySelector("h4 input");
-        this.price = 0;
-        this.sum = 0;
-        this.load();
-        this.addEvent();
+        this.ajax()
         this.delete();
     }
-    load() {
-        var that = this;
+    ajax() {
+        var that = this
         ajaxGet(this.url, function (res) {
+
             that.res = JSON.parse(res);
-            that.getCookie();
+            console.log(that.res);
+            that.cookie()
         })
     }
-    getCookie() {
+    cookie() {
+        var that = this;
         this.goods = getCookie("goods") ? JSON.parse(getCookie("goods")) : [];
-        this.display();
-    }
-    display() {
-        var str = "";
-        for (var i = 0; i < this.res.length; i++) {
-            for (var j = 0; j < this.goods.length; j++) {
-                if (this.res[i].goodsId === this.goods[j].id) {
-                    str += `<tr index="${this.goods[j].id}">
-                                    <td class=" text-center  py-5"><input type="checkbox" class="in"></td>
-                                    <td class=" text-center  py-2"><img src="${this.res[i].img1}" alt=""></td>
-                                    <td class=" text-center  py-5">${this.res[i].name}</td>
-                                    <td class=" text-center  py-5">${this.res[i].price}</td>
-                                    <td class=" text-center  py-5"><input type="text" class="nums" value="${this.goods[j].num}" disabled></td>
-                                    <td class=" text-center  py-5"><span class="btn btn-danger ">删除<span></td>
-                                    <td class=" text-center  py-5">${this.res[i].price * this.goods[j].num}</td>
+        this.str = "";
+        for (var i = 0; i < this.goods.length; i++) {
+            for (var j = 0; j < that.res.length; j++) {
+                if (this.goods[i].id == that.res[j].goodsId) {
+                    this.str += `
+                                <tr class="h-50" index="${that.goods[i].id}">
+                                        <td class="align-middle " scope="row">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">单选</label>
+                                            </div>
+                                        </td>
+                                        <td class="align-middle"><img src=${that.res[j].img1}></td>
+                                        <td class="align-middle">${that.res[j].name}</td>
+                                        <td class="align-middle">
+                                            <div class="border">
+                                                <button type="button" class="add pl-0">+</button>
+                                                <span class="ml-5" style="display:inline-block">${that.goods[i].num}</span>
+                                                <button type="button" class="reduce ml-5">-</button>
+                                            </div>
+                                        </td>
+                                        <td class="align-middle">${that.res[j].price}</td>
+                                        <td class="align-middle">0</td>
+                                        <td class="align-middle">
+                                                <button type="button" class="btn btn-danger btnd">删除</button>
+                                        </td>
                                 </tr>`
                 }
             }
         }
-        this.tbody.innerHTML = str;
-        this.inp = document.getElementsByClassName("in")
-        // this.jia1 = document.getElementsByClassName("jia")
-        // this.jian1 = document.getElementsByClassName("jian")
-        // this.nums = document.getElementsByClassName("nums")
-        // this.jia();
-        // this.jian();
+        this.tbody.innerHTML = this.str;
         this.checked();
-        this.prices();
-    }
-    addEvent() {
-        var that = this;
-        this.tbody.addEventListener("click", fn)
-        function fn(e) {
-            if (e.target.tagName == "SPAN") {
-                that.id = e.target.parentNode.parentNode.getAttribute("index")
-                e.target.parentNode.parentNode.remove();
-                that.updateCookie(function (i) {
-                    that.goods.splice(i, 1);
-                })
-            }
-            that.abc.innerHTML = "总计：" + that.price + "元";
-        }
-        this.tbody.addEventListener("input", fn1);
-        function fn1(e) {
-            if (e.target.className == "num") {
-                that.id = e.target.parentNode.parentNode.getAttribute("index");
-                that.updateCookie(function (i) {
-                    that.goods[i].num = e.target.value;
-                    that.display()
-                })
-            }
-        }
-        this.sum1();
-    }
-    updateCookie(cb) {
-        for (var i = 0; i < this.goods.length; i++) {
-            if (this.goods[i].id == this.id) {
-                cb(i);
-            }
-        }
-        setCookie("goods", JSON.stringify(this.goods))
-    }
-    prices() {
-        var that = this;
-        for (var i = 0; i < this.inp.length; i++) {
-            this.inp[i].onclick = function () {
-                if (this.checked == true) {
-                    that.id = this.parentNode.parentNode.getAttribute("index");
-                    that.price += parseFloat(this.parentNode.parentNode.lastElementChild.innerHTML)
-                } else if (this.checked == false) {
-                    that.ch.checked = false;
-                    that.price -= parseFloat(this.parentNode.parentNode.lastElementChild.innerHTML);
-                }
-                that.abc.innerHTML = "总计：" + that.price + "元";
-            }
-        }
-    }
-    sum1() {
-        var that = this;
-        this.tbody.addEventListener("click", fn)
-        function fn(e) {
-            if (e.target.className == "in") {
-                if (e.target.checked == true) {
-                    that.id = e.target.parentNode.parentNode.getAttribute("index")
-                    for (var i = 0; i < that.goods.length; i++) {
-                        if (that.goods[i].id == that.id) {
-                            that.sum += parseFloat(that.goods[i].num)
-                        }
-                    }
-                } else if (e.target.checked == false) {
-                    that.id = e.target.parentNode.parentNode.getAttribute("index")
-                    for (var i = 0; i < that.goods.length; i++) {
-                        if (that.goods[i].id == that.id) {
-                            console.log(parseFloat(that.goods[i].num))
-                            that.sum -= parseFloat(that.goods[i].num)
-                        }
-                    }
-                }
-                that.efg.innerHTML = "总计：" + that.sum + "件";
-            }
-        }
+        this.add();
+        this.reduce();
+        this.money();
+        this.clear()
 
     }
-    // jia() {
-    //     var that =this;
-    //     this.jia1.onclick = function(){
-    //          that.nums.value++;
-    //         console.log(that.nums)
-    //     }
-    // }
-    // jian() {
-    //     var that = this;
-    //     this.jian1.onclick = function(){
-    //         that.nums.value--;
-    //         console.log(that.nums.value)
-    //         console.log(1)
-    //     }
-    // }
-    delete() {
-        var that = this;
-        this.h4.onclick = function () {
-            that.tbody.innerHTML = "";
-            removeCookie("goods")
-            that.efg.innerHTML = "总计：" + 0 + "件";
-            that.abc.innerHTML = "总计：" + 0 + "元";
-        }
-    }
+    // 全选
     checked() {
-        var that = this;
-        this.ch.onclick = function () {
-            // console.log(that.abc);
-            if (that.ch.checked == true) {
-                for (var i = 0; i < that.inp.length; i++) {
-                    if (that.inp[i].checked == true) {
-                        that.price -= parseFloat(that.inp[i].parentNode.parentNode.lastElementChild.innerHTML);
-                        that.id = that.inp[i].parentNode.parentNode.getAttribute("index")
-                        for (var j = 0; j < that.goods.length; j++) {
-                            if (that.goods[j].id == that.id) {
-                                console.log(parseFloat(that.goods[j].num))
-                                that.sum -= parseFloat(that.goods[j].num)
-                            }
-                        }
-
-                    }
-                    that.inp[i].checked = true;
-                    that.price += parseFloat(that.inp[i].parentNode.parentNode.lastElementChild.innerHTML)
-                    console.log(that.price)
-                    that.id = that.inp[i].parentNode.parentNode.getAttribute("index")
-                    for (var j = 0; j < that.goods.length; j++) {
-                        if (that.goods[j].id == that.id) {
-                            that.sum += parseFloat(that.goods[j].num)
-                        }
-                    }
+        var that = this
+        $("#checkbox").click(function () {
+            for (var i = 0; i < $("tbody input").length; i++) {
+                if ($("#checkbox")[0].checked) {
+                    $("tbody input")[i].checked = true;
+                } else {
+                    $("tbody input")[i].checked = false;
                 }
-            } else if (that.ch.checked == false) {
-                for (var i = 0; i < that.inp.length; i++) {
-                    that.inp[i].checked = false;
-                    that.price -= parseFloat(that.inp[i].parentNode.parentNode.lastElementChild.innerHTML);
-                    that.id = that.inp[i].parentNode.parentNode.getAttribute("index")
-                    for (var j = 0; j < that.goods.length; j++) {
-                        if (that.goods[j].id == that.id) {
-                            console.log(parseFloat(that.goods[j].num))
-                            that.sum -= parseFloat(that.goods[j].num)
-                        }
+                that.num()
+            }
+        });
+
+        $("tbody input").click(function () {
+            for (var i = 0; i < $("tbody input").length; i++) {
+                if ($("tbody input")[i].checked) {
+                    $("#checkbox")[0].checked = false;
+                }
+                that.num()
+            }
+        })
+
+    }
+    // 增加按钮
+    add() {
+        var that = this
+        $(".add").click(function () {
+            this.goods = JSON.parse(getCookie("goods"));
+            for (var i = 0; i < this.goods.length; i++) {
+                if (this.goods[i].id == $(this).parent().parent().parent().attr("index")) {
+                    this.goods[i].num++;
+                    $(this).next().text(this.goods[i].num);
+
+                    $(this).parent().parent().next().next().text(this.goods[i].num * $(this).parent().parent().next().text());
+                }
+            }
+            setCookie("goods", JSON.stringify(this.goods));
+            that.num();
+        })
+
+    }
+    // 减少按钮
+    reduce() {
+        var that = this
+        $(".reduce").click(function () {
+            this.goods = JSON.parse(getCookie("goods"));
+            for (var i = 0; i < this.goods.length; i++) {
+                if (this.goods[i].id == $(this).parent().parent().parent().attr("index")) {
+                    if (!this.goods[i].num) {
+                        this.goods[i].num = 0;
+                    } else {
+                        this.goods[i].num--;
+                        $(this).prev().text(this.goods[i].num);
+                        $(this).parent().parent().next().next().text(this.goods[i].num * $(this).parent().parent().next().text());
+                        console.log(this.goods[i]);
                     }
                 }
             }
-            that.abc.innerHTML = "总计：" + that.price + "元";
-            that.efg.innerHTML = "总计：" + that.sum + "件";
-            console.log(that.price)
+            setCookie("goods", JSON.stringify(this.goods));
+            that.num();
+
+        })
+    }
+    // 删除按钮
+    delete() {
+        var that = this
+        $("tbody").click(function (e) {
+            that.arr = that.getCookie()
+            if (e.target.className.includes("btnd")) {
+                alert("确定删除吗");
+                this.index = e.target.parentElement.parentElement.getAttribute("index");
+                for (var i = 0; i < that.arr.length; i++) {
+                    if (that.arr[i].id == this.index) {
+                        that.arr.splice(i, 1);
+                        that.saveCookie(that.arr)
+                        e.target.parentElement.parentElement.remove();
+                    }
+                }
+                that.num()
+            }
+        })
+    }
+    // 设置cookie
+    saveCookie(arr) {
+        setCookie("goods", JSON.stringify(arr))
+    }
+    // 获取cookie
+    getCookie() {
+        this.arr = JSON.parse(getCookie("goods"))
+        return this.arr;
+    }
+    // 操作后总计
+    num() {
+        this.str = 0;
+        for (var i = 0; i < $("tbody>tr").length; i++) {
+            if ($("tbody>tr input")[i].checked) {
+                this.str += $($("tbody>tr")[i]).children().eq(4).text() * $($("tbody>tr")[i]).children().eq(3).children().children().eq(1).text()
+            }
+        }
+        $($("tfoot>tr")[0]).children().eq(1).text(this.str)
+    }
+    // 初始化金额
+    money() {
+        for (var i = 0; i < $("tbody>tr").length; i++) {
+            $($("tbody>tr")[i]).children().eq(5).text($($("tbody>tr")[i]).children().eq(4).text() * $($("tbody>tr")[i]).children().eq(3).children().children().eq(1).text())
         }
     }
-
+    clear() {
+        var that = this
+        $(".cbtn").click(function () {
+            removeCookie("goods");
+            that.ajax()
+            $(".abc")[0].innerHTML =0;
+        })
+    }
 }
-new car;
+new Car;
+//登录注销功能。
 let a = getCookie("name")
 console.log(a)
 console.log($(".de"))
@@ -234,5 +211,13 @@ $(".zhu").click(function () {
 console.log($(".de").text())
 if ($(".de").text() != "登录") {
     $(".nav-car").find("a").attr("href", "shop.html")
-
 }
+$(".allSum-auto").find("h3").click(function(){
+    if ($(".abc")[0].innerHTML == 0){
+        alert("请选择商品")
+    }else{
+       alert("功能正在开发中，请期待！")
+    }
+
+    
+})

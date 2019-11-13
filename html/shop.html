@@ -129,33 +129,33 @@
         </div>
     </div>
     <div class="car">
-        <h4><input type="button" value="全部删除"></h4>
-        <table class="table table-bordered table-sm table-striped ">
+        <table class="table table-bordered  mx-auto text-center mt-5 text-nowrap " style="width: 1000px">
             <thead>
                 <tr>
-                    <th>多选<input type="checkbox" id="ch"></th>
-                    <th>图片</th>
-                    <th>名称</th>
-                    <th>价格</th>
-                    <th>个数</th>
+                    <th>
+                        <div class="checkbox">
+                            <input type="checkbox" id="checkbox">全选
+                        </div>
+                    </th>
+                    <th class="active">商品图片</th>
+                    <th>商品名称</th>
+                    <th>商品数量</th>
+                    <th>商品价格</th>
+                    <th>金额</th>
                     <th>操作</th>
-                    <th>总价</th>
                 </tr>
             </thead>
             <tbody>
-                <!-- <tr>
-                            <td><input type="checkbox"></td>
-                            <td><img src="" alt=""></td>
-                            <td></td>
-                            <td></td>
-                            <td><input type="number"min="1"></td>
-                            <td>删除</td>
-                            <td></td>
-                        </tr> -->
             </tbody>
-            <div id="efg">总计：0件</div>
-            <div id="abc">总计：0元</div>
-        
+            <tfoot>
+                <tr>
+                    <td colspan="2">合计</td>
+                    <td class="abc">0</td>
+                    <td colspan="5">
+                        <button type="button" class="btn btn-danger float-right cbtn">全部删除</button>
+                    </td>
+                </tr>
+            </tfoot>
         </table>
     </div>
     <div class="allSum">

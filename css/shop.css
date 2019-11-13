@@ -208,10 +208,12 @@
     width: 100px;
     height: 50px;
     background: red;
+    margin-right: 170px;
     float: right;
     line-height: 50px;
     text-align: center;
     color:white;
+    cursor: pointer;
 }
 
  #link{

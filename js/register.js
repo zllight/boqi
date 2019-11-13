@@ -46,8 +46,8 @@ opas2.onblur = function () {
 }
 
 var arr;
+arr = getCookie("user") ? JSON.parse(getCookie("user")):[];
 obtn.onclick = function () {
-     arr = getCookie("user") ? JSON.parse(getCookie("user")) : [];
     var off = false;
     if (  p2 && t2 && t1) {
             for (var i = 0; i < arr.length; i++) {
