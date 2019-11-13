@@ -150,3 +150,12 @@ $(".nav-car").find("a").click(function(){
      alert("请先登录");
     }
 })
+var b =getCookie("goods")?JSON.parse(getCookie("goods")):[];
+var c=0
+if(b!=[]){
+for(var i=0;i<b.length;i++){
+    c+=(b[i].num)
+}
+}
+console.log(c)
+$(".nav-num").text(c+"件")

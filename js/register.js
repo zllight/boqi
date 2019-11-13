@@ -74,7 +74,7 @@ obtn.onclick = function () {
                      return;
                 }
             }
-        }
+        
           if(!off){
               arr.push({
                 user: oTxt2.value,
@@ -84,6 +84,7 @@ obtn.onclick = function () {
            off = true;
               alert("注册成功，去登录")
           }
+        }
         
        if (off) {
         window.location.href = 'http://localhost/boqi/html/login.html'

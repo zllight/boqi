@@ -175,6 +175,7 @@ class Car {
         this.str = 0;
         for (var i = 0; i < $("tbody>tr").length; i++) {
             if ($("tbody>tr input")[i].checked) {
+                console.log($($("tbody>tr")[i]).children().eq(3).children().children().eq(1).text())
                 this.str += $($("tbody>tr")[i]).children().eq(4).text() * $($("tbody>tr")[i]).children().eq(3).children().children().eq(1).text()
             }
         }
