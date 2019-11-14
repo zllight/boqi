@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+a {
+    color: black;
+}
+.header {
+    width: 1519px;
+    height: 36px;
+    border-bottom: 1px solid #ddd;
+}
+.header-auto {
+    width: 990px;
+    margin: 0 auto;
+    position: relative;
+}
+.left {
+    display: inline;
+    float: left;
+}
+.header-left {
+    li {
+        float: left;
+        margin: 0 20px 0 0;
+        line-height: 36px;
+    }
+}
+.right {
+    display: inline;
+    float: right;
+}
+/* .header-right li{
+    float: left;
+    height: 16px;
+    padding: 0 13px;
+    margin: 10px 0 0;
+    border-left: 1px solid #999;
+    position: relative;
+    z-index: 10;
+    font: 14px/14px "Microsoft YaHei";
+} */
+.head-main-right {
+    width: 500px;
+    float: right;
+    height: 36px;
+    line-height: 36px;
+    text-align: right;
+    margin-left: 20px;
+    li {
+        float: left;
+        border-right: 1px solid #ccc;
+        padding: 0 10px;
+        line-height: 16px;
+        margin: 10px 0;
+        padding-left: 10px;
+    }
+    .ph {
+        position: relative;
+    }
+    .ph1 {
+        position: relative;
+    }
+    .sh {
+        position: relative;
+    }
+    .tel {
+        position: absolute;
+        right: -1px;
+        top: 36px;
+        width: 100px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        background: #fff;
+        display: none;
+    }
+    .gh {
+        position: absolute;
+        right: -40px;
+        top: 36px;
+        width: 201px;
+        border: 1px solid #ccc;
+        background: #fff;
+        overflow: hidden;
+        display: none;
+        div {
+            float: left;
+            margin-left: 10px;
+        }
+    }
+    .ph2 {
+        position: absolute;
+        right: -1px;
+        top: 36px;
+        width: 100px;
+        border: 1px solid #ccc;
+        background: #fff;
+        display: none;
+        z-index: 2;
+        a {
+            display: block;
+            border-bottom: 1px dotted #ccc;
+            padding: 0 8px;
+            line-height: 28px;
+            overflow: hidden;
+            text-align: center;
+        }
+    }
+}
+.login-contant {
+    width: 1519px;
+    height: 706px;
+}
+.login-auto {
+    width: 990px;
+    height: 706px;
+    margin: 0 auto;
+}
+.login-top {
+    position: relative;
+    width: 990px;
+    height: 88px;
+    img {
+        float: left;
+    }
+    h1 {
+        height: 40px;
+        color: #666;
+        font: 24px/40px "Microsoft YaHei";
+        border-left: 1px solid #ccc;
+        padding: 0 0 0 10px;
+        margin: 25px 0 0 10px;
+        height: 40px;
+        width: 96px;
+        float: left;
+    }
+}
+.has-num {
+    position: absolute;
+    right: 0;
+    bottom: 15px;
+    color: #333;
+    font-family: "SimSun";
+    a {
+        color: blue;
+    }
+}
+.login-body {
+    width: 992px;
+    height: 583px;
+    margin: 0 auto;
+    background: #fff;
+    border: 1px solid #ddd;
+    overflow: hidden;
+}
+.lb-l {
+    width: 693px;
+    padding: 40px 0 0 50px;
+    height: 541px;
+    float: left;
+}
+.lb-l-p {
+    width: 693px;
+    height: 50px;
+    font-size: 20px;
+    h2 {
+        display: block;
+        width: 180px;
+        height: 50px;
+        border-bottom: 2px solid #f65;
+    }
+    img {
+        padding-top: 5px;
+    }
+}
+.lb-input {
+    width: 690px;
+    height: 500px;
+    padding-top: 80px;
+    input {
+        width: 250px;
+        height: 40px;
+        margin-top: 30px;
+    }
+}
+.btn {
+    width: 220px;
+    margin-left: 70px;
+    background: #f65;
+    height: 40px;
+    color: white;
+    border: 2px solid #f65;
+}
+.lb-r {
+    float: right;
+}
+#footer {
+    border-top: 1px solid #ddd;
+    width: 1519px;
+    height: 190px;
+}
+.footer_auto {
+    text-align: center;
+    margin: 0 auto;
+    width: 990px;
+    height: 151px;
+}
+.footer_bot {
+    padding: 20px 0;
+    position: relative;
+    width: 990px;
+    height: 111px;
+    p {
+        font-size: 12px;
+        color: #666;
+        line-height: 22px;
+    }
+}
+.link {
+    width: 990px;
+    height: 22px;
+    font-size: 12px;
+}

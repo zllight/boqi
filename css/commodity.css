@@ -182,6 +182,8 @@
         width: 50px;
         background: red;
         height: 31px;
+        float:right;
+              margin:0 140px 20px 0;
     }
     .nav {
         width: 100%;
