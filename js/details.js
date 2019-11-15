@@ -116,7 +116,7 @@ class car {
                     <div>有货；支持使用优惠券</div>
                     </div>
                     <div class="number">
-                    <div>购买数量</div>
+                    <div>购买数量:</div>
                     <div class="num-b">
                         <input type="button" id="btn1" value="-">
                         <input type="type" class="btn2"  size="2" value="1" disabled>
@@ -180,7 +180,6 @@ class car {
             if ($(".de").text() != "登录") {
             console.log($(".btn2")[0].value)
             that.setCookie()
-                console.log(that.navNum.innerHTML)
                 that.navNum.innerHTML = parseFloat(that.navNum.innerHTML)+parseFloat($(".btn2")[0].value);
             }else{
                 alert("请先登录");
@@ -288,6 +287,8 @@ if (a != "") {
 $(".zhu").click(function () {
     $(".de").html("<a href='login.html' target='_blank'>登录</a>")
     removeCookie("name")
+    $(".nav-num").text(0)
+    removeCookie("goods")
     $(".nav-car").find("a").attr("href", "")
 })
 console.log($(".de").text())
@@ -308,3 +309,9 @@ if (b != []) {
 }
 console.log(c)
 $(".nav-num").text(c)
+
+$(".return-top").click(function () {
+    $("html").animate({
+        scrollTop: $(".b").offset().top
+    })
+})

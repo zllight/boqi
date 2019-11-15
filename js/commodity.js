@@ -166,8 +166,10 @@ if (a != "") {
 }
 $(".zhu").click(function () {
     $(".de").html("<a href='login.html' target='_blank'>登录</a>")
-    removeCookie("name")
-    $(".nav-car").find("a").attr("href", "")
+    removeCookie("name");
+    $(".nav-car").find("a").attr("href", "");
+    $(".nav-num").text(0);
+    removeCookie("goods")
 })
 console.log($(".de").text())
 if ($(".de").text() != "登录") {
@@ -189,6 +191,12 @@ if (b != []) {
 console.log(c)
 $(".nav-num").text(c)
 $(".cont").find("img").css({"background":"#ccc","height":"100px"})
+
+$(".return-top").click(function () {
+    $("html").animate({
+        scrollTop: $(".b").offset().top
+    })
+})
 
 
 // var clientH = document.documentElement.clientHeight;
