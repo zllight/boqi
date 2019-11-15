@@ -65,12 +65,12 @@ class shop {
         for (var i = 0+t; i < this.res.length; i++) {
             str += `<div class="box2" index=${this.res[i].goodsId}>
                 <img src="${this.res[i].img1}" alt="">
-               <p><a class="p1" target="_blank" href="details.html">${this.res[i].name}<a></p>
+               <p><a class="p1"  href="details.html">${this.res[i].name}<a></p>
               <span style="color:red"">${this.res[i].price}</span>
           </div>`
             str2 += `<div class="box3" index=${this.res[i].goodsId}>
                 <img src="${this.res[i].img1}" alt="">
-               <p><a class="p1" target="_blank" href="details.html">${this.res[i].name}<a></p>
+               <p><a class="p1"  href="details.html">${this.res[i].name}<a></p>
               <span style="color:red"">${this.res[i].price}</span>
           </div>`
         }
