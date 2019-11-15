@@ -159,3 +159,5 @@ for(var i=0;i<b.length;i++){
 }
 console.log(c)
 $(".nav-num").text(c+"件")
+
+ 

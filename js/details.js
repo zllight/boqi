@@ -42,6 +42,7 @@ class car {
         this.tbody1 = document.querySelector(".shop-l");
         this.tbody2 = document.querySelector(".shop-c");
         this.tbody3 = document.querySelector(".synopsis");
+        this.navNum = document.querySelector(".nav-num")
         this.load();
     }
     load() {
@@ -179,6 +180,8 @@ class car {
             if ($(".de").text() != "登录") {
             console.log($(".btn2")[0].value)
             that.setCookie()
+                console.log(that.navNum.innerHTML)
+                that.navNum.innerHTML = parseFloat(that.navNum.innerHTML)+parseFloat($(".btn2")[0].value);
             }else{
                 alert("请先登录");
             }
@@ -304,4 +307,4 @@ if (b != []) {
     }
 }
 console.log(c)
-$(".nav-num").text(c + "件")
+$(".nav-num").text(c)

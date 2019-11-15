@@ -80,7 +80,7 @@ obtn.onclick = function () {
                 user: oTxt2.value,
                 pass: opas1.value
            })
-           setCookie("user",JSON.stringify(arr));
+              setCookie("user", JSON.stringify(arr),{ expires: 3, });
            off = true;
               alert("注册成功，去登录")
           }

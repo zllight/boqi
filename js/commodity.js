@@ -50,6 +50,7 @@ class shop {
     constructor() {
         this.cont = document.querySelector(".cont");
         this.url = "http://localhost/boqi/goods/goods.json"
+        this.navNum = document.querySelector(".nav-num")
         this.init();
         this.addEvent();
     }
@@ -64,7 +65,7 @@ class shop {
         var str = "";
         for (var i = 0; i < this.res.length; i++) {
             str += `<div class="box" index=${this.res[i].goodsId}>
-                <img src="${this.res[i].img1}"
+                <img data-src="${this.res[i].img1}"
                     alt="">
                     <span>${this.res[i].price}</span>
                     <span>波奇豆抵10%换购</span>
@@ -77,6 +78,34 @@ class shop {
             </div> `
         }
         this.cont.innerHTML = str;
+        let imgs = document.querySelectorAll(".cont img")
+        this.load(imgs);
+    }
+    load(imgs){
+        var clientH = document.documentElement.clientHeight;
+        var scrollT = document.documentElement.scrollTop;
+        var arr = [];
+        for (var i = 0; i < imgs.length; i++) {
+            arr.push(imgs[i]);
+        }
+        function lazyLoad(elements, cH, sT) {
+            for (var i = 0; i < arr.length; i++) {
+                if (arr[i].offsetTop < cH + sT) {
+                    arr[i].src = arr[i].getAttribute("data-src");
+                    arr.splice(i, 1);
+                    i--;
+                    console.log(arr)
+                    console.log(cH,sT)
+                }
+            }
+        }
+        lazyLoad(imgs, clientH, scrollT);
+
+
+        onscroll = function () {
+            var scrollT = document.documentElement.scrollTop;
+            lazyLoad(imgs, clientH, scrollT);
+        }
     }
     addEvent() {
         var that = this;
@@ -85,6 +114,8 @@ class shop {
                 if ($(".de").text() != "登录") {
                 that.id = eve.target.parentNode.getAttribute("index");
                 that.setCookie();
+                    that.navNum.innerHTML++
+
                 }else{
                     alert("请先登录")
                 }
@@ -154,5 +185,33 @@ if (b != []) {
         c += (b[i].num)
     }
 }
+
 console.log(c)
-$(".nav-num").text(c + "件")
+$(".nav-num").text(c)
+$(".cont").find("img").css({"background":"#ccc","height":"100px"})
+
+
+// var clientH = document.documentElement.clientHeight;
+// var scrollT = document.documentElement.scrollTop;
+// //		var arr = Array.from(elements);
+// var arr = [];
+// for (var i = 0; i < imgs.length; i++) {
+//     arr.push(imgs[i]);
+// }
+
+// function lazyLoad(elements, cH, sT) {
+//     for (var i = 0; i < arr.length; i++) {
+//         if (arr[i].offsetTop < cH + sT) {
+//             arr[i].src = arr[i].getAttribute("data-src");
+//             arr.splice(i, 1);
+//             i--;
+//         }
+//     }
+// }
+// lazyLoad(imgs, clientH, scrollT);
+
+
+// onscroll = function () {
+//     var scrollT = document.documentElement.scrollTop;
+//     lazyLoad(imgs, clientH, scrollT);
+// }

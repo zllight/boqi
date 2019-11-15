@@ -207,6 +207,8 @@ if (a != "") {
 $(".zhu").click(function () {
     $(".de").html("<a href='login.html' target='_blank'>登录</a>")
     removeCookie("name")
+    removeCookie("goods")
+    $("tbody").html("");
     $(".nav-car").find("a").attr("href", "")
 })
 console.log($(".de").text())

@@ -8,10 +8,25 @@ btn.onclick = function () {
     for (var i = 0; i < a.length; i++) {
         if (ph.value == a[i].user && m.value == a[i].pass) {
             window.location.href = " http://localhost/boqi/html/index.html";
-            setCookie("name", ph.value)
+            setCookie("name", ph.value,{ expires: 3, })
             off = 1;
             console.log(a[i].user)
+            break;
         }
+        if (ph.value == a[i].user && m.value != a[i].pass){
+            off = 2;
+            break;
+        }
+        if (ph.value != a[i].user){
+            off =3;
+            break;
+        }
+    }
+    switch (off) {
+        case 2: alert("密码错误");
+            break;
+        case 3: alert("用户名不存在");
+            break;
     }
 
     //  for (var i = 0; i < a.length; i++) {
@@ -19,21 +34,21 @@ btn.onclick = function () {
     //           off = 2;
     //      }
     // }
-    if (ph.value == "" && m.value == "") {
-        alert("请输入用户名和密码登录")
-        return;
-    } else if (ph.value == "") {
-        alert("请输入用户名")
-        return;
-    } else if (m.value == "") {
-        alert("请输入密码")
-        return;
-    }
-    if (off == 0) {
-        alert("密码错误");
-    }
-    if (off == 2) {
-        alert("用户名不存在")
-    }
+    // if (ph.value == "" && m.value == "") {
+    //     alert("请输入用户名和密码登录")
+    //     return;
+    // } else if (ph.value == "") {
+    //     alert("请输入用户名")
+    //     return;
+    // } else if (m.value == "") {
+    //     alert("请输入密码")
+    //     return;
+    // }
+    // if (off == 0) {
+    //     alert("密码错误");
+    // }
+    // if (off == 2) {
+    //     alert("用户名不存在")
+    // }
 }
 

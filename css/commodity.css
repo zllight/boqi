@@ -352,7 +352,7 @@
         width: 1200px;
         margin: 0 auto;
         margin-top:56px;
-        height: 1100px;
+        height: 1850px;
     }
 
     .box {
@@ -361,7 +361,7 @@
         border: 2px solid #ccc;
         /* text-align: center; */
         box-sizing: border-box;
-        margin: 10px 10px 0 0 ;
+        margin: 10px 20px 0 0 ;
     }
     .box:hover{
         border-color: red;
@@ -370,6 +370,7 @@
     .box img {
         width: 70%;
         padding-left:40px;
+        height: 180px;
     }
 
     .box p {
@@ -472,4 +473,3 @@
              color: #666;
              line-height: 22px;
     }
- 
